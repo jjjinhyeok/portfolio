@@ -10,6 +10,7 @@ velog: velog.io/@909snare
 # Skills
 ## Front-end
 - HTML/CSS/JS
+- JQuery
 - React / Redux
 ## Back-end / DB
 - Node.js / Express.js
