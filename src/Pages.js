@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from 'react';
 import Pageable from 'pageable';
-import styled from 'styled-component';
+import styled from 'styled-components';
 
 const Topbar = styled.div`
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   
@@ -19,6 +20,7 @@ function Pages() {
       <Topbar>
         <div className="home">김진혁</div>
         <div className="btns">
+          
         </div>
       </Topbar>
       <div id="container">
