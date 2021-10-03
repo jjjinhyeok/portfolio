@@ -20,7 +20,7 @@ const Topbar = styled.div`
   top: 0;
   left: 0;
   height: 50px;
-  width: calc(100% - 60px);
+  width: calc(100% - 100px);
   justify-content: space-between;
   padding: 0 50px;
   background: rgba(0, 0, 0, 0.5);
@@ -167,7 +167,7 @@ const Page2Div = styled.div`
     .wrap-photo {
       width: 300px;
       height: 300px;
-      border-radius: 150px;
+      border-radius: 200px;
       overflow: hidden;
       border: 5px solid ${colors.ds};
       @media only screen and (max-width: 600px) {
@@ -237,15 +237,16 @@ const Page2Div = styled.div`
     }
   }
   .bg-anim {
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: linear-gradient(-45deg, ${colors.ls}, ${colors.lsD}, ${colors.ls}, ${colors.lsD});
-    background-size: 400% 400%;
-    animation: ${gradient} 5s ease infinite;
+    display:none;
+    // z-index: 0;
+    // width: 100%;
+    // height: 100%;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // background: linear-gradient(-45deg, ${colors.ls}, ${colors.lsD}, ${colors.ls}, ${colors.lsD});
+    // background-size: 400% 400%;
+    // animation: ${gradient} 5s ease infinite;
   }
 `;
 
@@ -253,6 +254,7 @@ const Page3Div = styled.div`
   height: 100%;
   width: 100%;
   background: ${colors.ds};
+  z-index: 3;
 
 `;
 
@@ -349,6 +351,17 @@ function Pages() {
         </div>
         <div data-anchor="Page 3">
           <Page3Div>
+            <div className="items">
+              <div className="frontend item">
+                <div className="title">
+                  Front-end
+                </div>
+                <div className="wrap-img">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+            <h1>asdfdasfasdfasdf</h1>
           </Page3Div>
         </div>
       </div>
