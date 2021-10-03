@@ -4,8 +4,7 @@
 주소지 : 인천광역시 미추홀구
 연락처 : 010-9389-7831
 이메일 : snare909@gmail.com
-GitHub: github.com/devjinhyeok
-velog: velog.io/@909snare
+아카이빙 : github.com/devjinhyeok / velog.io/@909snare
 
 # Skills
 ## Front-end

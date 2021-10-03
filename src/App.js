@@ -10,6 +10,13 @@ const GlobalStyle = createGlobalStyle`
     // font-family: 'Do Hyeon', sans-serif;
     font-family: 'Nanum Gothic', sans-serif;
     // font-family: 'Poppins', sans-serif;
+    cursor: default;
+  }
+  .btn {
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none; outline: none
   }
 `;
 
