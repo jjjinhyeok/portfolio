@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Pageable from 'pageable';
 import styled, { keyframes } from 'styled-components';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -30,6 +30,12 @@ const Topbar = styled.div`
   font-weight: bold;
   color: ${colors.ls};
   z-index: 10;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+  }
 
   .home {
     display: flex;
@@ -115,6 +121,7 @@ const Page1Div = styled.div`
   }
 
   .scroll-box {
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     bottom: 12px;
@@ -140,113 +147,109 @@ const gradient = keyframes`
 `;
 
 const Page2Div = styled.div`
-  height: 100%;
   width: 100%;
-  display: flex;
+  height: 100%;
   background-color: ${colors.ls};
-  // background: linear-gradient( to left, ${colors.ls}, ${colors.la});
+  display: flex;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-  &>* {
-    z-index: 3;
-  }
-  .wrap-wrap-photo {
+
+  .wrap-page2 {
     height: 100%;
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding-left: 100px;
-    padding-right: 100px;
-    @media only screen and (max-width: 600px) {
-      height: 30%;
-    }
-    .wrap-photo {
-      width: 300px;
-      height: 300px;
-      border-radius: 200px;
-      overflow: hidden;
-      border: 5px solid ${colors.ds};
-      @media only screen and (max-width: 600px) {
-        width: 180px;
-        height: 180px;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-  }
-  .line {
-    width: 5px;
-    height: 80%;
-    background: ${colors.da};
-    @media only screen and (max-width: 600px) {
-      display: none; 
-    }
-  }
-  .items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    padding-left: 100px;
     @media only screen and (max-width: 600px) {
       flex-direction: column;
-      gap: 10px;
-      padding-left: 0;
+      width: 100%;
     }
-    .item {
+    &>* {
+      z-index: 3;
+    }
+    .wrap-wrap-photo {
+      height: 100%;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      flex: 1 1 40%;
+
+      padding-left: 100px;
+      padding-right: 100px;
       @media only screen and (max-width: 600px) {
-        flex: 1 1 10%;
+        height: 30%;
       }
-      svg {
-        color: ${colors.main};
+      .wrap-photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        overflow: hidden;
+        border: 5px solid ${colors.ds};
+        @media only screen and (max-width: 600px) {
+          width: 180px;
+          height: 180px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
-      .wrap-text {
-        color: ${colors.ds};
+    }
+    .line {
+      width: 5px;
+      height: 80%;
+      background: ${colors.da};
+      @media only screen and (max-width: 600px) {
+        display: none; 
+      }
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+      padding-left: 100px;
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+      }
+      .item {
         display: flex;
         justify-content: flex-start;
-        align-items: start;
-        flex-direction: column;
-        margin-left: 10px;
-        gap: 5px;
-        .title {
-          font-size: 20px;
-          font-weight: bold;
-
+        align-items: center;
+        flex: 1 1 40%;
+        @media only screen and (max-width: 600px) {
+          flex: 1 1 10%;
         }
-        .desc {
-          text-align: left;
-          font-size: 18px;
+        svg {
+          color: ${colors.main};
         }
-        a {
+        .wrap-text {
           color: ${colors.ds};
-        }
-        a:hover {
-          text-decoration: underline;
+          display: flex;
+          justify-content: flex-start;
+          align-items: start;
+          flex-direction: column;
+          margin-left: 10px;
+          gap: 5px;
+          .title {
+            font-size: 20px;
+            font-weight: bold;
+
+          }
+          .desc {
+            text-align: left;
+            font-size: 18px;
+          }
+          a {
+            color: ${colors.ds};
+          }
+          a:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
-  }
-  .bg-anim {
-    display:none;
-    // z-index: 0;
-    // width: 100%;
-    // height: 100%;
-    // position: absolute;
-    // left: 0;
-    // top: 0;
-    // background: linear-gradient(-45deg, ${colors.ls}, ${colors.lsD}, ${colors.ls}, ${colors.lsD});
-    // background-size: 400% 400%;
-    // animation: ${gradient} 5s ease infinite;
   }
 `;
 
@@ -254,18 +257,44 @@ const Page3Div = styled.div`
   height: 100%;
   width: 100%;
   background: ${colors.ds};
-  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  .wrap-page3 {
+    height: 100%;
+    width: 1200px;
+
+  }
 `;
 
 function Pages() {
   useEffect(() => {
     new Pageable('#container', {
+      animation: 800,
+      events: {
+        wheel: false,
+      },
     });
   });
+  const [toggle, setToggle] = useState(false);
+  const handleWheel = (e) => {
+    if(toggle) return;
+    setToggle(true);
+    const up = new KeyboardEvent('keydown', { key: 'ArrowUp' });
+    const down = new KeyboardEvent('keydown', { key: 'ArrowDown' });
+    if(e.nativeEvent.wheelDelta > 0) {
+      document.dispatchEvent(up);
+    } else {
+      document.dispatchEvent(down);
+    }
+    console.log('here');
+    setTimeout(() => {setToggle(false)}, 1500);
+  };
   return (
     <>
       <Topbar>
+      
         <div className="home btn">Kim Jinhyeok</div>
         <div className="btns">
           <div className="btn-me btn">About Me</div>
@@ -273,7 +302,7 @@ function Pages() {
           <div className="btn-projects btn">Projects</div>
         </div>
       </Topbar>
-      <div id="container">
+      <div id="container"  onWheel={handleWheel}>
         <div data-anchor="Page 1">
           <Page1Div>
             <div className="text-box">
@@ -293,60 +322,61 @@ function Pages() {
         </div>
         <div data-anchor="Page 2">
           <Page2Div>
-            <div className="wrap-wrap-photo">
-              <div className="wrap-photo">
-                <img src={process.env.PUBLIC_URL + '/me.jpg'} alt="me" />
-              </div>
-            </div>
-            <div className="line"></div>
-            <div className="items">
-              <div className="name item">
-                <BsFillPersonFill size="50px" />
-                <div className="wrap-text">
-                  <div className="title">이름</div>
-                  <div className="desc">김진혁</div>
+            <div className="wrap-page2">
+              <div className="wrap-wrap-photo">
+                <div className="wrap-photo">
+                  <img src={process.env.PUBLIC_URL + '/me.jpg'} alt="me" />
                 </div>
               </div>
-              <div className="birth item">
-                <BsCalendarFill size="50px" />
-                <div className="wrap-text">
-                  <div className="title">생년월일</div>
-                  <div className="desc">1993.11.02</div>
+              <div className="line"></div>
+              <div className="items">
+                <div className="name item">
+                  <BsFillPersonFill size="50px" />
+                  <div className="wrap-text">
+                    <div className="title">이름</div>
+                    <div className="desc">김진혁</div>
+                  </div>
                 </div>
-              </div>
-              <div className="address item">
-                <BsGeoAlt size="50px" />
-                <div className="wrap-text">
-                  <div className="title">주소지</div>
-                  <div className="desc">인천광역시 미추홀구</div>
+                <div className="birth item">
+                  <BsCalendarFill size="50px" />
+                  <div className="wrap-text">
+                    <div className="title">생년월일</div>
+                    <div className="desc">1993.11.02</div>
+                  </div>
                 </div>
-              </div>
-              <div className="phone item">
-                <IoCall size="50px" />
-                <div className="wrap-text">
-                  <div className="title">연락처</div>
-                  <div className="desc">010-9389-7831</div>
+                <div className="address item">
+                  <BsGeoAlt size="50px" />
+                  <div className="wrap-text">
+                    <div className="title">주소지</div>
+                    <div className="desc">인천광역시 미추홀구</div>
+                  </div>
                 </div>
-              </div>
-              <div className="email item">
-                <BsEnvelopeFill size="50px" />
-                <div className="wrap-text">
-                  <div className="title">이메일</div>
-                  <div className="desc">snare909@gmail.com</div>
+                <div className="phone item">
+                  <IoCall size="50px" />
+                  <div className="wrap-text">
+                    <div className="title">연락처</div>
+                    <div className="desc">010-9389-7831</div>
+                  </div>
                 </div>
-              </div>
-              <div className="archiving item">
-                <BsServer size="50px" />
-                <div className="wrap-text">
-                  <div className="title">아카이빙</div>
-                  <div className="desc">
-                    <a href="https://github.com/devjinhyeok">github.com/devjinhyeok</a><br/>
-                    <a href="https://velog.io/@909snare">velog.io/@909snare</a><br/>
+                <div className="email item">
+                  <BsEnvelopeFill size="50px" />
+                  <div className="wrap-text">
+                    <div className="title">이메일</div>
+                    <div className="desc">snare909@gmail.com</div>
+                  </div>
+                </div>
+                <div className="archiving item">
+                  <BsServer size="50px" />
+                  <div className="wrap-text">
+                    <div className="title">아카이빙</div>
+                    <div className="desc">
+                      <a href="https://github.com/devjinhyeok">github.com/devjinhyeok</a><br/>
+                      <a href="https://velog.io/@909snare">velog.io/@909snare</a><br/>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="bg-anim"></div>
           </Page2Div>
         </div>
         <div data-anchor="Page 3">
@@ -357,7 +387,7 @@ function Pages() {
                   Front-end
                 </div>
                 <div className="wrap-img">
-                  <img src="" alt="" />
+                  <img src={process.env.PUBLIC_URL + '/frontend.png'} alt="frontend" />
                 </div>
               </div>
             </div>
