@@ -1,7 +1,7 @@
 # what to do now?
 skills image 만들기 ok
 page2 폭 1200px ok
-trackpad continuing 수정
+trackpad continuing 수정 ok
 스크롤 애니메이션 촥촉 
 image 들을 이용한 skill page3
 

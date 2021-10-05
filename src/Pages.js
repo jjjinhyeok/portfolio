@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import { IoIosArrowDown } from 'react-icons/io';
 import { IoCall } from 'react-icons/io5';
 import { BsFillPersonFill, BsCalendarFill, BsGeoAlt, BsEnvelopeFill, BsServer } from 'react-icons/bs';
+import { useChain, animated, useSpringRef, useSpring, useTransition } from 'react-spring';
 
 const colors = {
   ls: '#f6f6eb',
@@ -173,10 +174,11 @@ const Page2Div = styled.div`
       justify-content: center;
       align-items: center;
 
-      padding-left: 100px;
+      padding-left: 50px;
       padding-right: 100px;
       @media only screen and (max-width: 600px) {
         height: 30%;
+        padding-left: 100px;
       }
       .wrap-photo {
         width: 300px;
@@ -257,7 +259,7 @@ const Page3Div = styled.div`
   height: 100%;
   width: 100%;
   background: ${colors.ds};
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -288,9 +290,10 @@ function Pages() {
     } else {
       document.dispatchEvent(down);
     }
-    console.log('here');
     setTimeout(() => {setToggle(false)}, 1500);
   };
+
+  // animation 
   return (
     <>
       <Topbar>
