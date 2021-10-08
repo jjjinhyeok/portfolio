@@ -1,6 +1,6 @@
 import './App.css';
 import Pages from './Pages';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;800&display=swap');
@@ -21,10 +21,22 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
+  const theme = {
+    colors: {
+      ls: '#f6f6eb',
+      lsD: '#ddddb3',
+      la: '#d68d4c',
+      main: '#8ea3a6',
+      da: '#957c6b',
+      ds: '#563e38',
+    }
+  };
   return (
     <div className="App">
-      <GlobalStyle />
-      <Pages />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Pages />
+      </ThemeProvider>
     </div>
   );
 }

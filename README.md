@@ -2,7 +2,7 @@
 skills image 만들기 ok
 page2 폭 1200px ok
 trackpad continuing 수정 ok
-스크롤 애니메이션 촥촉 
+스크롤 애니메이션 촥촉 react-spring fail, framer go 
 image 들을 이용한 skill page3
 
 # About Me
@@ -65,7 +65,7 @@ AWS(EC2(Window Server), RDS)
 # Project #3 
 ## 포트폴리오 페이지
 #### 2021.09 ~ 2021.10 / 개인 프로젝트 
-포트폴리오 용도로 제작한 React 기반의 웹사이트입니다.  동적인 작업이 필요 없는 정보의 표현을 위한 페이지 였기에 GitHub Pages에 호스팅해봤습니다. 또 CSS를 이용한 반응형 웹 디자인에 집중할 수 있는 기회였습니다. 
+포트폴리오 용도로 제작한 React 기반의 웹사이트입니다.  동적인 작업이 필요 없는 정보의 표현을 위한 페이지 였기에 GitHub Pages에 호스팅해봤습니다. 또 CSS를 이용한 반응형 웹 디자인에 집중할 수 있는 기회였습니다. framer를 이용한 애니메이션
 ### 주요 기능
 Full page scrolling, Responsive web design
 ### GitHub
