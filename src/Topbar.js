@@ -48,8 +48,10 @@ function Topbar() {
   const theme = useContext(ThemeContext);
   const [isScroll, setScroll] = useState(0);
   const updateScroll = () => {
-    const scroll = document.documentElement.scrollTop || document.body.scrollTop
-    setScroll(scroll > 30 ? true : false);
+    const scroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const h = document.documentElement.clientHeight - 70;
+    console.log('height', h);
+    setScroll(scroll > h ? true : false);
   };
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);

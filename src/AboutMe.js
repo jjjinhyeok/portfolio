@@ -4,7 +4,8 @@ import { BsFillPersonFill, BsCalendarFill, BsGeoAlt, BsEnvelopeFill, BsServer } 
 
 const AboutMeDiv = styled.div`
   width: 100%;
-  height: 100%;
+  // height: 100%;
+  height: 2000px;
   background-color: ${props => props.theme.colors.ls};
   display: flex;
   justify-content: center;
