@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import styled, { keyframes } from 'styled-components';
 import { IoIosArrowDown } from 'react-icons/io';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 const blink = keyframes`
   50% {
@@ -8,7 +10,7 @@ const blink = keyframes`
 `;
 
 const CoverDiv = styled.div`
-  height: 100vh;
+  height: 101vh;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -16,6 +18,7 @@ const CoverDiv = styled.div`
   justify-content: center;
   position: relative;
   background-color: ${props => props.theme.colors.ds};
+  overflow: hidden;
   
   &>* {
     position: absolute;
@@ -56,8 +59,8 @@ const CoverDiv = styled.div`
     z-index: 2;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: 110%;
+      height: 110%;
       object-fit: cover;
       overflow: none;
     }
@@ -78,6 +81,19 @@ const CoverDiv = styled.div`
 `;
 
 function Cover() {
+  // scroll interaction to bg image
+  const { scrollYProgress } = useViewportScroll();
+  const input = [0, 1];
+  const output = [0, 1000];
+  const y = useTransform(scrollYProgress, input, output);
+
+  const updateScroll = () => {
+    console.log(scrollYProgress);
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', updateScroll);
+  }, []);
+
   return (
     <CoverDiv>
       <div className="text-box">
@@ -87,7 +103,7 @@ function Cover() {
         <h3>안녕하세요. 저는 코딩과 배우는 것이 즐겁고 생산성에 관심이 많습니다.</h3>
       </div>
       <div className="wrap-img">
-        <img src={process.env.PUBLIC_URL + '/macbook.jpg'} alt="macbook" />
+        <motion.img src={process.env.PUBLIC_URL + '/macbook.jpg'} alt="macbook" style= {{ y }} />
       </div>
       <div className="scroll-box">
         Scroll

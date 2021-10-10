@@ -50,13 +50,12 @@ function Topbar() {
   const updateScroll = () => {
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
     const h = document.documentElement.clientHeight;
-    console.log('height', h);
     setScroll(scroll > h ? true : false);
   };
   useEffect(() => {
     window.addEventListener('scroll', updateScroll);
-  }, [])
-  
+  }, []);
+
   return (
     <TopbarDiv style={{
       background: isScroll ? theme.colors.ls : 'none',
