@@ -13,6 +13,24 @@ const PagesDiv = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
+  // title 공통 스타일
+  .section {
+    .wrap-title {
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .wrap-icon {
+        color: ${props => props.theme.colors.main};
+      }
+      .wrap-text {
+        color: ${props => props.theme.colors.black};
+        font-size: 2.8rem;
+      }
+    }
+  }
 `;
 
 function Pages() {

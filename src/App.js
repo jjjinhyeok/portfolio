@@ -1,15 +1,16 @@
-import './App.css';
+import './fonts.css';
 import Pages from './Pages';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanum+Gothic:wght@400;800&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+const GlobalFonts = createGlobalStyle`
+`;
 
+const GlobalStyle = createGlobalStyle`
   body {
-    // font-family: 'Do Hyeon', sans-serif;
-    font-family: 'Nanum Gothic', sans-serif;
-    // font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-family: DoHyeon, sans-serif;
+    padding: 0;
+    margin: 0;
     cursor: default;
   }
   .btn {
@@ -18,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none; outline: none
   }
+  
 `;
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
+        <GlobalFonts />
         <GlobalStyle />
         <Pages />
       </ThemeProvider>

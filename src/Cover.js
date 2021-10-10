@@ -12,7 +12,6 @@ const blink = keyframes`
 const CoverDiv = styled.div`
   height: 101vh;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +34,7 @@ const CoverDiv = styled.div`
       margin: 0 10px;
     }
     h1 {
-      font-size: 60px;
+      font-size: 5rem;
     }
     .line {
       width: 90%;
@@ -43,9 +42,10 @@ const CoverDiv = styled.div`
       background-color: ${props => props.theme.colors.da};
     }
     h2 {
-      font-size: 32px;
+      font-size: 2rem;
     }
     h3 {
+      font-size: 1.5rem;
     }
   }
 

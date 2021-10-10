@@ -12,7 +12,6 @@ const TopbarDiv = styled.div`
   padding: 0 50px;
   // background: rgba(0, 0, 0, 0.5);
 
-  font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: ${props => props.theme.colors.ls};
@@ -59,7 +58,7 @@ function Topbar() {
   return (
     <TopbarDiv style={{
       background: isScroll ? theme.colors.ls : 'none',
-      borderBottom: isScroll ? `2px solid ${theme.colors.main}` : 'none',
+      borderBottom: isScroll ? `1px solid ${theme.colors.main}` : 'none',
       color: isScroll ? theme.colors.ds : theme.colors.ls,
     }}>
       <div className="home btn">Kim Jinhyeok</div>
