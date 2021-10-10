@@ -99,10 +99,11 @@ const AboutMeDiv = styled.div`
             text-align: left;
             font-size: 18px;
           }
-          a {
+          .link {
             color: ${props => props.theme.colors.ds};
+            cursor: pointer;
           }
-          a:hover {
+          .link:hover {
             text-decoration: underline;
           }
         }
@@ -112,6 +113,12 @@ const AboutMeDiv = styled.div`
 `;
 
 function AboutMe() {
+  const githubClick = () => {
+    window.open('https://github.com/devjinhyeok');
+  };
+  const velogClick = () => {
+    window.open('https://velog.io/@909snare');
+  };
   return (
     <AboutMeDiv>
       <div className="wrap-page2">
@@ -162,8 +169,9 @@ function AboutMe() {
             <div className="wrap-text">
               <div className="title">아카이빙</div>
               <div className="desc">
-                <a href="https://github.com/devjinhyeok">github.com/devjinhyeok</a><br/>
-                <a href="https://velog.io/@909snare">velog.io/@909snare</a><br/>
+                <span className="link" onClick={githubClick}>github.com/devjinhyeok</span>
+                <br />
+                <span className="link" onClick={velogClick}>velog.io/@909snare</span>
               </div>
             </div>
           </div>
