@@ -49,7 +49,7 @@ function Topbar() {
   const [isScroll, setScroll] = useState(0);
   const updateScroll = () => {
     const scroll = document.documentElement.scrollTop || document.body.scrollTop;
-    const h = document.documentElement.clientHeight - 70;
+    const h = document.documentElement.clientHeight;
     console.log('height', h);
     setScroll(scroll > h ? true : false);
   };

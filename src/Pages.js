@@ -4,6 +4,7 @@ import Topbar from './Topbar';
 import Cover from './Cover';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
+import Footer from './Footer';
 
 const PagesDiv = styled.div`
   width: 100%;
@@ -21,6 +22,7 @@ function Pages() {
       <Cover />
       <AboutMe />
       <Skills />
+      <Footer />
     </PagesDiv>
   );
 };

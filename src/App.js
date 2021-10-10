@@ -29,6 +29,7 @@ function App() {
       main: '#8ea3a6',
       da: '#957c6b',
       ds: '#563e38',
+      black: '#191919'
     }
   };
   return (

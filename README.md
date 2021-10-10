@@ -2,6 +2,7 @@
 skills image 만들기 ok
 page2 폭 1200px ok
 trackpad continuing 수정 ok
+topbar 변화할 때 애니메이션 적용 가능한가?
 cover 이미지 스크롤에 따른 인터랙션, scroll 깜빡임 fade out
 스크롤 애니메이션 촥촉 react-spring fail, framer go 
 image 들을 이용한 skill page3

@@ -140,7 +140,7 @@ function AboutMe() {
             <BsGeoAlt size="50px" />
             <div className="wrap-text">
               <div className="title">주소지</div>
-              <div className="desc">인천광역시 미추홀구</div>
+              <div className="desc">인천광역시</div>
             </div>
           </div>
           <div className="phone item">
