@@ -63,9 +63,21 @@ function Topbar() {
     }}>
       <div className="home btn">Kim Jinhyeok</div>
       <div className="btns">
-        <div className="btn-me btn">About Me</div>
-        <div className="btn-skills btn">Skills</div>
-        <div className="btn-projects btn">Projects</div>
+        <div className="btn-me btn">
+          <a href="#aboutme">
+            About Me
+          </a>
+        </div>
+        <div className="btn-skills btn">
+          <a href="#skills">
+            Skills
+          </a>
+        </div>
+        <div className="btn-projects btn">
+          <a href="#projects">
+            Projects
+          </a>
+        </div>
       </div>
     </TopbarDiv>
   )

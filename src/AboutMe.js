@@ -12,17 +12,14 @@ const AboutMeDiv = styled.div`
   align-items: center;
 
   .section {
-    height: 100%;
-    width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     @media only screen and (max-width: 600px) {
       flex-direction: column;
       width: 100%;
     }
     .wrap-article {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       .wrap-wrap-photo {
         height: 100%;
         display: flex;
@@ -30,7 +27,7 @@ const AboutMeDiv = styled.div`
         align-items: center;
 
         padding-left: 50px;
-        padding-right: 100px;
+        padding-right: 80px;
         @media only screen and (max-width: 600px) {
           height: 30%;
           padding-left: 100px;
@@ -52,19 +49,19 @@ const AboutMeDiv = styled.div`
           }
         }
       }
-      .line {
-        width: 5px;
-        height: 80%;
-        background: ${props => props.theme.colors.da};
-        @media only screen and (max-width: 600px) {
-          display: none; 
-        }
-      }
+      // .line {
+      //   width: 5px;
+      //   height: 80%;
+      //   background: ${props => props.theme.colors.da};
+      //   @media only screen and (max-width: 600px) {
+      //     display: none;
+      //   }
+      // }
       .items {
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
-        padding-left: 100px;
+        padding-left: 80px;
         @media only screen and (max-width: 600px) {
           flex-direction: column;
           gap: 10px;
@@ -82,6 +79,7 @@ const AboutMeDiv = styled.div`
             color: ${props => props.theme.colors.main};
           }
           .wrap-text {
+            font-family: NanumGothic, sans-serif;
             color: ${props => props.theme.colors.ds};
             display: flex;
             justify-content: flex-start;
@@ -122,7 +120,7 @@ function AboutMe() {
     <AboutMeDiv>
       <div className="section">
         <div className="wrap-title">
-          <div className="wrap-icon">
+          <div className="wrap-icon" id="aboutme">
             <FaPaperclip size="2.5rem" />
           </div>
           <div className="wrap-text">

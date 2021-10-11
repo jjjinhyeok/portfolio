@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import styled from 'styled-components';
 
 import Topbar from './Topbar';
@@ -16,11 +17,20 @@ const PagesDiv = styled.div`
   
   // title 공통 스타일
   .section {
+    padding: 50px 0;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .wrap-title {
+      margin-bottom: 30px;
       height: 5rem;
       display: flex;
       justify-content: center;
       align-items: center;
+
       gap: 10px;
       .wrap-icon {
         color: ${props => props.theme.colors.main};
@@ -28,12 +38,21 @@ const PagesDiv = styled.div`
       .wrap-text {
         color: ${props => props.theme.colors.black};
         font-size: 2.8rem;
+        font-family: BlackHans, sans-serif;
+        border-bottom: 1px solid ${props => props.theme.colors.main};
       }
     }
   }
 `;
 
 function Pages() {
+  // hash anchor position control
+  useEffect(() => { // todo: 요수정
+    window.addEventListener('hashchange', () => {
+      console.log('hash change');
+      window.scrollTo(window.scrollX, window.scrollY - 80);
+    });
+  }, []);
   return (
     <PagesDiv>
       <Topbar />
