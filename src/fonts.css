@@ -2,3 +2,22 @@
   font-family: DoHyeon;
   src: url('./fonts/Do_Hyeon/DoHyeon-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: BlackHans;
+  src: url('./fonts/Black_Han_Sans/BlackHanSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: NanumGothic;
+  src: url('./fonts/Nanum_Gothic/NanumGothic-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: NanumGothic;
+  src: url('./fonts/Nanum_Gothic/NanumGothic-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: NanumGothic;
+  src: url('./fonts/Nanum_Gothic/NanumGothic-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+}
