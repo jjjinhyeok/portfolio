@@ -55,7 +55,7 @@ const CoverDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: brightness(0.5);
+    // filter: brightness(0.5);
     z-index: 2;
 
     img {
