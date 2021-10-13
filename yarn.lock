@@ -8343,7 +8343,7 @@
   dependencies:
     "ts-pnp" "^1.1.6"
 
-"popmotion@9.3.6":
+"popmotion@^9.3.6", "popmotion@9.3.6":
   "integrity" "sha512-ZTbXiu6zIggXzIliMi8LGxXBF5ST+wkpXGEjeTUDUOCdSQ356hij/xjeUdv0F8zCQNeqB1+PR5/BB+gC+QLAPw=="
   "resolved" "https://registry.npmjs.org/popmotion/-/popmotion-9.3.6.tgz"
   "version" "9.3.6"

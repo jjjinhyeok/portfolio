@@ -54,6 +54,10 @@ const SkillsDiv = styled.div`
 
 `;
 
+const itemList = { // tood: 이를 이용한 리팩토링
+  title: 'frontend',
+};
+
 function Skills() {
   const hoverStyle = {
     y: +10,

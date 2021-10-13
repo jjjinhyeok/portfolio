@@ -5,6 +5,7 @@ import Topbar from './Topbar';
 import Cover from './Cover';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
+import Projects from './Projects';
 import Footer from './Footer';
 
 const PagesDiv = styled.div`
@@ -59,6 +60,7 @@ function Pages() {
       <Cover />
       <AboutMe />
       <Skills />
+      <Projects />
       <Footer />
     </PagesDiv>
   );

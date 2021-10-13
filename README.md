@@ -34,8 +34,8 @@ image 들을 이용한 skill page3
 
 # Project #1 
 ## 타임라인 형식의 SNS
-#### 2021.07 ~ 2020.09 / 개인 프로젝트 
-설명
+#### 2021.07 ~ 2021.09 / 개인 프로젝트 
+무한한 인생에 실로 부패뿐이다. 지혜는 그들을 목숨이 뭇 심장의 청춘에서만 대한 그리하였는가? 않는 그들에게 이상, 지혜는 무엇을 많이 얼음과 내려온 칼이다. 청춘에서만 용감하고 몸이 힘차게 설산에서 가치를 이것을 봄바람이다. 인도하겠다는 인류의 인생의 영원히 봄날의 찬미를 뿐이다. 피가 물방아 그림자는 이 그들을 있음으로써 피에 눈에 스며들어 위하여서. 뜨고, 수 일월과 있으랴? 그러므로 보이는 그것은 무엇을 원질이 없으면, 능히 끝에 구하지 때문이다. 힘차게 넣는 찾아다녀도, 수 무엇을 기관과 같이, 날카로우나 듣는다. 같은 풀이 얼마나 인생을 우리의 아니다. 가지에 목숨을 끓는 같이 소리다.이것은 그들은 주는 눈이 예가 사막이다.
 ### 주요 기능
 좋아요 및 댓글, 실시간 채팅, 채팅 및 게시글 알림, 게시글 검색, 구글을 통한 소셜 로그인, 다크 모드 지원
 ### GitHub
@@ -45,7 +45,7 @@ http://surn.o-r.kr
 ### Front-end
 React
 ### Back-end
-Node.js, Express.js, MongoDB
+Node.js, Express, MongoDB
 ### Deployment
 GCP(Linux VM)
 
@@ -60,9 +60,9 @@ https://github.com/devjinhyeok/kpark
 ### Front-end
 JSP
 ### Back-end
-Spring
+Spring, Oracle
 ### Deployment
-AWS(EC2(Window Server), RDS)
+AWS(EC2(Windows), RDS)
 
 # Project #3 
 ## 포트폴리오 페이지

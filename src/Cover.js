@@ -84,7 +84,7 @@ function Cover() {
   // scroll interaction to bg image
   const { scrollYProgress } = useViewportScroll();
   const input = [0, 1];
-  const output = [0, 1000];
+  const output = [0, 3000];
   const y = useTransform(scrollYProgress, input, output);
 
   const updateScroll = () => {

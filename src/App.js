@@ -21,6 +21,14 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     color: inherit;
   }
+  img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
   
 `;
 
