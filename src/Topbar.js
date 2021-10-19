@@ -61,7 +61,7 @@ function Topbar() {
       borderBottom: isScroll ? `1px solid ${theme.colors.main}` : 'none',
       color: isScroll ? theme.colors.ds : theme.colors.ls,
     }}>
-      <div className="home btn">Kim Jinhyeok</div>
+      <div className="home btn" onClick={()=>window.scrollTo(0,0)}>Kim Jinhyeok</div>
       <div className="btns">
         <div className="btn-me btn">
           <a href="#aboutme">

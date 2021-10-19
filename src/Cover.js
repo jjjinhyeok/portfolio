@@ -87,13 +87,6 @@ function Cover() {
   const output = [0, 3000];
   const y = useTransform(scrollYProgress, input, output);
 
-  const updateScroll = () => {
-    console.log(scrollYProgress);
-  };
-  useEffect(() => {
-    window.addEventListener('scroll', updateScroll);
-  }, []);
-
   return (
     <CoverDiv>
       <div className="text-box">

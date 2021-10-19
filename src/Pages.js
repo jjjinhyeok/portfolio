@@ -49,9 +49,18 @@ const PagesDiv = styled.div`
 function Pages() {
   // hash anchor position control
   useEffect(() => { // todo: 요수정
-    window.addEventListener('hashchange', () => {
-      console.log('hash change');
-      window.scrollTo(window.scrollX, window.scrollY - 80);
+    // window.addEventListener('hashchange', () => {
+    //   console.log('hash change');
+    //   window.scrollTo(window.scrollX, window.scrollY - 80);
+    // });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        console.log('anchor!');
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
     });
   }, []);
   return (
