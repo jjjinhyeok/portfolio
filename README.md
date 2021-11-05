@@ -9,12 +9,12 @@
 <!-- smooth anchor ok -->
 
 # About Me
-이름 : 김진혁
-생년월일 : 1993.11.02
-주소지 : 인천광역시 미추홀구
-연락처 : 010-9389-7831
-이메일 : snare909@gmail.com
-아카이빙 : github.com/devjinhyeok / velog.io/@909snare
+- 이름 : 김진혁
+- 생년월일 : 1993.11.02
+- 주소지 : 인천광역시 미추홀구
+- 연락처 : 010-9389-7831
+- 이메일 : snare909@gmail.com
+- 아카이빙 : github.com/devjinhyeok / velog.io/@909snare
 
 # Skills
 ## Front-end
