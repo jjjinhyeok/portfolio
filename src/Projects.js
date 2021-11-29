@@ -228,7 +228,7 @@ function Projects() {
         process.env.PUBLIC_URL+'/screenshots/2004.png',
         process.env.PUBLIC_URL+'/screenshots/2005.png',
       ],
-      text: '',
+      text: '학원에서 수료한 Java 강의의 최종 프로젝트로 진행한 중고차 매매 웹사이트입니다. 단순한 게시판이 아닌 차량, 회원, 거래 정보 등의 여러 DB 테이블을 요구했기에 선정한 주제였고 그에 맞게 테이블 간의 관계를 위한 참조키, 외래키를 사용해 볼 수 있었습니다. \n\n4인 협업 프로젝트였고 개발할 분량이 적지 않았기에 나름대로의 체계적인 프로세스를 진행하기 위해 노력하였습니다. 큰 틀을 잡기 위한 IA(Information Architecture)을 작성하고, UI를 직접 구현하기 전 Uxpin을 이용한 목업도 그렸습니다. Github를 통한 소스 공유와 분업으로 협업의 기본을 배울 수 있는 기회였습니다. ',
       points: [
         {
           head: '주요 기능',
