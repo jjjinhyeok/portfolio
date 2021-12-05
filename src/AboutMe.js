@@ -130,7 +130,7 @@ function AboutMe() {
         <div className="wrap-article">
           <div className="wrap-wrap-photo" >
             <div className="wrap-photo">
-              <img src={process.env.PUBLIC_URL + '/me.jpg'} alt="me" />
+              <img src={process.env.PUBLIC_URL + '/idpicblue.jpg'} alt="me" />
             </div>
           </div>
           <div className="line"></div>

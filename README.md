@@ -87,3 +87,19 @@ React
 ### Deployment
 GitHub Pages
 
+# Project #4 
+## Django를 이용한 게시판(수정중)
+#### 2021.11 ~ 2021.12 / 개인 프로젝트 
+포트폴리오 용도로 제작한 React 기반의 웹사이트입니다. 서버가 필요 없는 정보 표현을 위한 정적 페이지 였기에 GitHub Pages에 호스팅 했습니다. 또 CSS를 이용한 반응형 웹 디자인에 집중할 수 있는 기회였습니다. framer-motion 라이브러리를 이용한 애니메이션을 버튼과 메인 이미지 스크롤 인터랙션에 적용했습니다.
+
+react, django, ssr using nextjs
+### 주요 기능
+반응형 웹 디자인, 스크롤 인터랙션 
+### GitHub
+https://github.com/devjinhyeok/portfolio
+### 도메인
+https://devjinhyeok.github.io/portfolio
+### Front-end
+React
+### Deployment
+GitHub Pages
