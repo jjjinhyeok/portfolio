@@ -35,6 +35,9 @@ const CoverDiv = styled.div`
     }
     h1 {
       font-size: 5rem;
+      @media only screen and (max-width: 600px) {
+        font-size: 3rem;
+      }
     }
     .line {
       width: 90%;

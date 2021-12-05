@@ -20,6 +20,10 @@ const AboutMeDiv = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        width: 100%;
+      }
       .wrap-wrap-photo {
         height: 100%;
         display: flex;
@@ -31,6 +35,7 @@ const AboutMeDiv = styled.div`
         @media only screen and (max-width: 600px) {
           height: 30%;
           padding-left: 100px;
+          margin-bottom: 30px;
         }
         .wrap-photo {
           width: 300px;
@@ -49,14 +54,6 @@ const AboutMeDiv = styled.div`
           }
         }
       }
-      // .line {
-      //   width: 5px;
-      //   height: 80%;
-      //   background: ${props => props.theme.colors.da};
-      //   @media only screen and (max-width: 600px) {
-      //     display: none;
-      //   }
-      // }
       .items {
         display: flex;
         flex-wrap: wrap;

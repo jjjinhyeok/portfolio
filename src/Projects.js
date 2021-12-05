@@ -25,6 +25,9 @@ const ProjectsDiv = styled.div`
         .item {
           background: ${props => props.theme.colors.ls};
           padding: 30px 40px;
+          @media only screen and (max-width: 600px) {
+            padding: 28px 13px;
+          }
           border-radius: 30px;
           box-shadow: 1rem 1rem 1rem 0 rgba(68,68,68,.2);
           .wrap-title {
@@ -49,6 +52,9 @@ const ProjectsDiv = styled.div`
             justify-content: center;
             align-items: flex-start;
             gap: 40px;
+            @media only screen and (max-width: 600px) {
+              flex-direction: column;
+            }
             .wrap-gall {
               display: flex;
               justify-content: center;
