@@ -94,8 +94,9 @@ board using react, django
 ### 도메인
 <!-- https://devjinhyeok.github.io/portfolio -->
 ### Front-end
-React
+<span><img src="https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=white"/></span>
 ### Back-end
-Django, Django REST framework
+<span><img src="https://img.shields.io/badge/Django-092D1F?style=flat&logo=django&logoColor=white"/></span>
+<span><img src="https://img.shields.io/badge/django REST framework-092D1F?style=flat&logo=django&logoColor=white"/></span>
 ### Deployment
 <!-- GitHub Pages -->
