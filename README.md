@@ -11,20 +11,24 @@ https://devjinhyeok.github.io/portfolio
 
 # Skills
 ## Front-end
-- HTML/CSS/JS
-- JQuery
-- React / Redux
+- <span><img src="https://img.shields.io/badge/HTML-e34f26?style=flat&logo=html5&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/CSS-1572b6?style=flat&logo=css3&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/JavaScript-dbab09?style=flat&logo=javascript&logoColor=white"/></span>
+- <span><img src="https://img.shields.io/badge/jQuery-0769ad?style=flat&logo=jquery&logoColor=white"/></span>
+- <span><img src="https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=white"/></span>
+<span><img src="https://img.shields.io/badge/Redux-764abc?style=flat&logo=redux&logoColor=white"/></span>
 ## Back-end / DB
-- Node.js / Express.js
-- MongoDB / Mongoose
-- Spring / Servlets 
-- Oracle
+- <span><img src="https://img.shields.io/badge/Node.js-3c873a?style=flat&logo=Node.js&logoColor=white"/></span> 
+<span><img src="https://img.shields.io/badge/express-6ba063?style=flat&logo=Express&logoColor=white"/></span>
+- <span><img src="https://img.shields.io/badge/MongoDB-3fa037?style=flat&logo=MongoDB&logoColor=white"/></span> 
+<span><img src="https://img.shields.io/badge/mongoose-ffffff?style=flat"/></span>
+- <span><img src="https://img.shields.io/badge/Spring-6AAD3D?style=flat&logo=Spring&logoColor=white"/></span> 
+<span><img src="https://img.shields.io/badge/Servlets-F18146?style=flat&logo=Java&logoColor=white"/></span>
+- <span><img src="https://img.shields.io/badge/Oracle-DB2024?style=flat&logo=Oracle&logoColor=white"/></span>
 ## Deployment
-- AWS
-- GCP
+- <span><img src="https://img.shields.io/badge/AWS-F79403?style=flat&logo=amazon-aws&logoColor=white"/></span>
+- <span><img src="https://img.shields.io/badge/GCP-4C89ED?style=flat&logo=Google&logoColor=white"/></span>
 ## Version Control
-- git
-- GitHub
+- <span><img src="https://img.shields.io/badge/git-E94D31?style=flat&logo=git&logoColor=white"/></span>
+- <span><img src="https://img.shields.io/badge/GitHub-000000?style=flat&logo=GitHub&logoColor=white"/></span>
 
 # Project #1 
 ## 타임라인 형식의 SNS
