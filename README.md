@@ -46,11 +46,11 @@ https://github.com/devjinhyeok/sns-using-react-nodejs
 ### 도메인
 http://surn.o-r.kr
 ### Front-end
-React
+<span><img src="https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=white"/></span>
 ### Back-end
-Node.js, Express, MongoDB
+<span><img src="https://img.shields.io/badge/Node.js-3c873a?style=flat&logo=Node.js&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/express-6ba063?style=flat&logo=Express&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/MongoDB-3fa037?style=flat&logo=MongoDB&logoColor=white"/></span> 
 ### Deployment
-GCP(Linux VM)
+<span><img src="https://img.shields.io/badge/GCP-4C89ED?style=flat&logo=Google&logoColor=white"/></span>
 
 # Project #2 
 ## 중고차 매매 사이트 
@@ -63,11 +63,11 @@ GCP(Linux VM)
 ### GitHub
 https://github.com/devjinhyeok/kpark
 ### Front-end
-JSP
+<span><img src="https://img.shields.io/badge/JSP-F18146?style=flat&logo=Java&logoColor=white"/></span>
 ### Back-end
-Spring, Oracle
+<span><img src="https://img.shields.io/badge/Spring-6AAD3D?style=flat&logo=Spring&logoColor=white"/></span> <span><img src="https://img.shields.io/badge/Oracle-DB2024?style=flat&logo=Oracle&logoColor=white"/></span>
 ### Deployment
-AWS(EC2(Windows), RDS)
+<span><img src="https://img.shields.io/badge/AWS-F79403?style=flat&logo=amazon-aws&logoColor=white"/></span>
 
 # Project #3 
 ## 포트폴리오 페이지
@@ -80,9 +80,9 @@ https://github.com/devjinhyeok/portfolio
 ### 도메인
 https://devjinhyeok.github.io/portfolio
 ### Front-end
-React
+<span><img src="https://img.shields.io/badge/React-61dafb?style=flat&logo=react&logoColor=white"/></span>
 ### Deployment
-GitHub Pages
+<span><img src="https://img.shields.io/badge/GitHub Pages-000000?style=flat&logo=GitHub&logoColor=white"/></span>
 
 # Project #4 
 ## Django를 이용한 게시판(수정중)
